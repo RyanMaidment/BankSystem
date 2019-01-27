@@ -16,7 +16,7 @@ public class Bank {
 		switch(menu) {
 		
 		case 'a': System.out.println("Hello");
-		case 'c': System.out.println("Wassup");
+		case 'b': System.out.println("Wassup");
 		}
 	
 		}
