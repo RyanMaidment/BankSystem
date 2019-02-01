@@ -20,20 +20,22 @@ public class Bank {
 	
 		for (int i = 1; i <= j; i++) {
 			System.out.println("Enter First name: ");
-			firstName = input.next();
+			String firstName = input.next();
 
 			System.out.println("Enter Last name: ");
-			lastName = input.next();
+			String lastName = input.next();
 
 			System.out.println("Enter phone number: ");
-			phoneNum = input.nextLong();
+			long phoneNum = input.nextLong();
 
 			System.out.println("Enter Email address: ");
-			email = input.next();
+			String email = input.next();
+
+			Client client = new Client(firstName, lastName, phoneNum, email);
+			client.account() = input.nextDouble();
 
 		}
 
-		Client client = new Client(firstName, lastName, phoneNum, email);
 		System.out.println("Enter account balance: ");
 		client.account() = input.nextDouble();
 		Account[] accounts = new Account[j];

@@ -4,7 +4,7 @@ public class Account {
 
 	private long accountNum;
 	private double balance;
-	private Client client = new Client(null, null, accountNum, null);
+	private  Client client;
 			Random random = new Random();
 
 	public Account(Client client, double balance) {
