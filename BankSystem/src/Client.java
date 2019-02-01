@@ -7,7 +7,10 @@ public class Client {
 	private String email;
 	
 public Client (String firstName, String lastName, long phoneNum, String email) {
-	System.out.println("Test");
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.phoneNum = phoneNum;
+	this.email = email;
 }
 
 

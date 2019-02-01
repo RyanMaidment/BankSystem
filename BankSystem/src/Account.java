@@ -5,20 +5,21 @@ public class Account {
 	private long accountNum;
 	private double balance;
 	private Client client = new Client(null, null, accountNum, null);
-	private Random random = new Random();
+			Random random = new Random();
 
 	public Account(Client client, double balance) {
-		balance = 0;
+		this.balance = 0;
+		this.client = client ;
 	}
 
 	public void deposit(double amt, double balance) {
 
-		amt += balance;
+		amt += this.balance;
 
 	}
 
 	public boolean withdraw(double amt) {
-		if (amt <= balance) {
+		if (amt <= this.balance) {
 			return true;
 		}
 
@@ -34,12 +35,12 @@ public class Account {
 	}
 
 	public Client getClient() {
-		return client;
+		return this.client;
 
 	}
 
 	public double getBalance() {
-		return balance;
+		return this.balance;
 	}
 
 	public String getName() {
