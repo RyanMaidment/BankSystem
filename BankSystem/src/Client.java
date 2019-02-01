@@ -7,7 +7,7 @@ public class Client {
 	private String email;
 	
 public Client (String firstName, String lastName, long phoneNum, String email) {
-	
+	System.out.println("Test");
 }
 
 

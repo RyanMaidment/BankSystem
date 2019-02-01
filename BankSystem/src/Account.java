@@ -4,17 +4,17 @@ public class Account {
 
 	private long accountNum;
 	private double balance;
-	Client client1 = new Client(null, null, accountNum, null);
-	Random random = new Random();
+	private Client client = new Client(null, null, accountNum, null);
+	private Random random = new Random();
 
-	public Account(Client client1, double balance) {
+	public Account(Client client, double balance) {
 		balance = 0;
 	}
 
 	public void deposit(double amt, double balance) {
-		
-		amt += balance; 
-		
+
+		amt += balance;
+
 	}
 
 	public boolean withdraw(double amt) {
@@ -34,7 +34,7 @@ public class Account {
 	}
 
 	public Client getClient() {
-		return client1 ;
+		return client;
 
 	}
 
@@ -43,8 +43,7 @@ public class Account {
 	}
 
 	public String getName() {
-		client1.getName();
-		return getName();
+		return client.getName();
 
 	}
 }
