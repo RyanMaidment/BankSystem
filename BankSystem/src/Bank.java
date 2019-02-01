@@ -33,12 +33,12 @@ public class Bank {
 
 			Client client = new Client(firstName, lastName, phoneNum, email);
 			client.account() = input.nextDouble();
-
+			System.out.println("Enter account balance: ");
+			client.account() = input.nextDouble();
+			Account[] accounts = new Account[j];
 		}
 
-		System.out.println("Enter account balance: ");
-		client.account() = input.nextDouble();
-		Account[] accounts = new Account[j];
+	
 	}
 
 	public void printAccounts() {
